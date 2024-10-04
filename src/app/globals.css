@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.portfolio::after {
+  content: "";
+  top: -50%;
+  left: -50%;
+  position: absolute;
+  background: linear-gradient(45deg,
+      rgba(123, 10, 238, 1) 40%,
+      rgba(247, 101, 255, 1) 80%);
+  height: 200%;
+  width: 200%;
+}
+
+@media screen and (min-width: 64em) {
+  .portfolio::after {
+    animation: rotate 10s ease-in-out infinite;
+    -webkit-animation: rotate 10s ease infinite;
+    -moz-animation: rotate 10s ease infinite;
+  }
+}
+
+.portfolio>* {
+  position: relative;
+  z-index: 10;
+}
+
+.gradient-btn::after {
+  content: "";
+  top: 50;
+  left: 50;
+  position: absolute;
+  background: linear-gradient(45deg,
+      rgba(123, 10, 238, 1) 45%,
+      rgba(247, 101, 255, 1) 90%);
+  height: 400%;
+  width: 400%;
+  rotate: 180deg;
+  border-radius: 50%;
+  animation: rotate 5s ease-in-out infinite;
+  -webkit-animation: rotate 10s ease infinite;
+  -moz-animation: rotate 10s ease infinite;
+}
+
+.gradient-btn>* {
+  position: relative;
+  z-index: 10;
+}
+
+.gradient-btn-wide::after {
+  content: "";
+  top: 50;
+  left: 50;
+  position: absolute;
+  background: linear-gradient(45deg,
+      rgba(123, 10, 238, 1) 35%,
+      rgba(247, 101, 255, 1) 90%);
+  height: 900%;
+  width: 900%;
+  rotate: 180deg;
+  border-radius: 50%;
+  animation: rotate 5s ease-in-out infinite;
+  -webkit-animation: rotate 10s ease infinite;
+  -moz-animation: rotate 10s ease infinite;
+}
+
+.gradient-btn-wide>* {
+  position: relative;
+  z-index: 10;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+input[type="radio"] {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+* {
+  /* border: 1px solid red; */
+}
