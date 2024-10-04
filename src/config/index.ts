@@ -19,10 +19,10 @@ export const navLinks = [
     label: "About Us",
     href: "/about-us",
   },
-  {
-    label: "Packages",
-    href: "/#packages",
-  },
+  // {
+  //   label: "Packages",
+  //   href: "/#packages",
+  // },
   {
     label: "Services",
     href: "/#services",

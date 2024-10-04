@@ -24,13 +24,19 @@ export default function RootLayout({
       <body
         className={cn(
           exo.className,
-          "relative min-h-screen overflow-x-hidden text-foreground/90 antialiased",
+          "relative min-h-screen overflow-x-hidden text-foreground/90 antialiased ",
         )}
       >
         <Providers>{children}</Providers>
         <div
           className="fixed inset-0 bg-[url('/images/bg-gradient.webp')] 
-          bg-cover bg-center opacity-50"
+          bg-cover bg-center opacity-40"
+        />
+
+        {/* Left Image */}
+        <div
+          className="fixed left-0 top-0 h-full w-1/2 bg-[url('/images/docs-left.png')] bg-cover bg-left bg-no-repeat 
+    opacity-30"
         />
       </body>
     </html>
