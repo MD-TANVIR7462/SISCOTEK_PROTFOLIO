@@ -69,7 +69,7 @@ export default function ContactPage() {
   return (
     <div className="flex  w-screen items-center justify-center ">
       <div className="container mx-auto my-4 px-4 lg:px-20">
-        <div className="my-4 mr-auto w-full rounded-2xl p-8 shadow-2xl md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40">
+        <div className="my-4 mr-auto w-full rounded-3xl p-8 shadow-2xl md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40">
           <div className="flex">
             <h1 className="text-2xl md:text-5xl font-bold uppercase">
               Send us a message
@@ -147,7 +147,7 @@ export default function ContactPage() {
             <div className="z-10 my-2 w-full md:col-span-2">
               <button
                 type="submit"
-                className="focus:shadow-outline w-full rounded-lg bg-blue-900 p-3  text-sm font-bold uppercase tracking-wide text-gray-100 focus:outline-none"
+                className="focus:shadow-outline w-full rounded-lg bg-purple-800 bg-opacity-70 p-3  text-sm font-bold uppercase tracking-wide text-gray-100 focus:outline-none"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
@@ -157,12 +157,12 @@ export default function ContactPage() {
         </div>
 
         {/* The Office Information Section */}
-        <div className="ml-auto w-full rounded-2xl bg-blue-900 px-8 py-12 lg:-mt-96 lg:w-2/6">
+        <div className="ml-auto w-full rounded-2xl bg-blue-900 bg-opacity-60 px-8 py-12 lg:-mt-96 lg:w-2/6">
           <div className="flex flex-col text-white">
             <h1 className="my-4 text-4xl font-bold uppercase">
               Drop in our office
             </h1>
-            <p className="text-gray-400">
+            <p className="text-gray-300">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               tincidunt arcu diam, eu feugiat felis fermentum id. Curabitur
               vitae nibh viverra, auctor turpis sed, scelerisque ex.
@@ -174,7 +174,7 @@ export default function ContactPage() {
               </div>
               <div className="flex flex-col">
                 <h2 className="text-2xl">Main Office</h2>
-                <p className="text-gray-400">
+                <p className="text-gray-300">
                   5555 Tailwind RD, Pleasant Grove, UT 73533
                 </p>
               </div>
@@ -186,8 +186,8 @@ export default function ContactPage() {
               </div>
               <div className="flex flex-col">
                 <h2 className="text-2xl">Call Us</h2>
-                <p className="text-gray-400">Tel: xxx-xxx-xxx</p>
-                <p className="text-gray-400">Fax: xxx-xxx-xxx</p>
+                <p className="text-gray-300">Tel: xxx-xxx-xxx</p>
+                <p className="text-gray-300">Fax: xxx-xxx-xxx</p>
               </div>
             </div>
 
@@ -196,17 +196,17 @@ export default function ContactPage() {
                 href="https://www.facebook.com/ENLIGHTENEERING/"
                 target="_blank"
                 rel="noreferrer"
-                className="mx-1 inline-block h-8 w-8 rounded-full bg-white pt-1 text-center"
+                className="mx-1 inline-block h-8 w-8 rounded-full  pt-1 text-center"
               >
-                <i className="fab fa-facebook-f text-blue-900" />
+                <i className="fab fa-facebook-f text-white" />
               </a>
               <a
                 href="https://www.linkedin.com/company/enlighteneering-inc-"
                 target="_blank"
                 rel="noreferrer"
-                className="mx-1 inline-block h-8 w-8 rounded-full bg-white pt-1 text-center"
+                className="mx-1 inline-block h-8 w-8 rounded-full  pt-1 text-center"
               >
-                <i className="fab fa-linkedin-in text-blue-900" />
+                <i className="fab fa-linkedin-in text-white-900" />
               </a>
             </div>
           </div>
