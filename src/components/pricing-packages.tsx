@@ -16,6 +16,9 @@ export async function PricingPackages() {
           <MotionDiv
             initial={{
               y: 100,
+
+
+              
               opacity: 0,
             }}
             whileInView={{
