@@ -1,10 +1,22 @@
-const test = () => {
-   return (
-      <div>
-         <h1>Hello Push just for Maintaining the git hub strike , sorry github i'm too busy today that's why i didn't push anything today </h1>
-         
-      </div>
-   );
+import { Button } from "@nextui-org/button";
+import { Input, Textarea } from "@nextui-org/input";
+
+const ContractInput = () => {
+  return (
+    <div>
+      <Input className="max-w-xl" type="email" label="Name" />
+      <Input className="max-w-xl" type="email" label="Email" />
+      <Input className="max-w-xl" type="email" label="Nobile" />
+      <Textarea
+        label="Description"
+        placeholder="Enter your message"
+        className="max-w-xl"
+      />
+      <Button className="max-w-xs bg-gray-500 px-8 py-6 text-white">
+        Submit
+      </Button>
+    </div>
+  );
 };
 
-export default test;
+export default ContractInput;
